@@ -12,31 +12,34 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Backend & Full-Stack · AI Systems
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              I design and build backend services, APIs, and data pipelines—from
+              FastAPI and Node/Express to MongoDB, PostgreSQL, and Supabase. I
+              can ship full-stack applications with JWT/RBAC, validation, and
+              scalable ingestion workflows so products run reliably end to end.
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              On the AI side, I build RAG pipelines with LangChain and FAISS,
+              chunking and embedding strategies, and LLM integrations for
+              search, Q&A, and code intelligence. I can also implement ML models
+              (TensorFlow, scikit-learn), vision architectures, and data quality
+              and validation pipelines.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
-                {" "}
                 Get In Touch
               </a>
 
               <a
-                href=""
+                href="public/prathamesh__.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Download CV
               </a>
@@ -50,10 +53,11 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <h4 className="font-semibold text-lg">Backend & Full-Stack</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
+                    REST/GraphQL APIs (FastAPI, Node, Express), auth (JWT,
+                    RBAC), databases (MongoDB, PostgreSQL, Supabase), and
+                    frontends (React, Next.js). End-to-end apps from API to UI.
                   </p>
                 </div>
               </div>
@@ -64,10 +68,11 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <h4 className="font-semibold text-lg">AI & RAG</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                    RAG pipelines with LangChain and FAISS, chunking and
+                    embeddings, and LLM integration for search, Q&A, and
+                    code intelligence.
                   </p>
                 </div>
               </div>
@@ -77,12 +82,12 @@ export const AboutSection = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
-
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <h4 className="font-semibold text-lg">ML & Data</h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+                    ML models (TensorFlow, scikit-learn), vision (ResNet, ViT),
+                    quantum ML (PennyLane), and data pipelines with validation
+                    and quality checks.
                   </p>
                 </div>
               </div>

@@ -3,32 +3,63 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "AGILITY – Agile Developer Productivity Platform",
+    description:
+      "VS Code–integrated code intelligence pipeline using AST-based function and module-level semantic chunking. RAG workflow with FAISS-embedded code chunks to ground LLM-based code review suggestions.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["VS Code", "Next.js", "FastAPI", "AST", "RAG", "LangChain", "FAISS"],
+    demoUrl: null,
+    githubUrl: "https://github.com/Prathameshworks247/AGILITY",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "DiagnosAI – AI-Powered Clinical Management System",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "End-to-end clinical portal with real-time transcription, automated medical document ingestion, and AI-powered diagnosis. Multi-modal RAG with MongoDB patient context and FAISS-powered PDF search, JWT-based RBAC.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "FastAPI", "MongoDB", "RAG", "FAISS", "Gemini", "Med42", "Sarvam STT", "LSTM"],
+    demoUrl: "https://drive.google.com/file/d/1YwQbtY9xqeKUDBclJnBX5pRcBdu5sLtX/view?usp=sharing",
+    githubUrl: "https://github.com/Prathameshworks247/DiagnosAI",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "MOODIT – Reddit-powered Sentiment Intelligence",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Sentiment analysis using RoBERTa and time-series forecasting to predict trends. RAG pipeline grounding Gemini-based analytical Q&A with embedded Reddit discussions and interactive dashboards.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["FastAPI", "React", "RoBERTa", "RAG", "Gemini API", "Time-Series"],
+    demoUrl: "https://mooddit.vercel.app/",
+    githubUrl: "https://github.com/Prathameshworks247/Mooddit",
+  },
+  {
+    id: 4,
+    title: "SheWanders",
+    description:
+      "Initiative to help women explore the world safely by connecting them with trusted travel companions. Fosters a supportive community for women travelers to share journeys.",
+    image: null,
+    tags: ["Python", "MERN"],
+    demoUrl: null,
+    githubUrl: "https://github.com/Prathameshworks247/SheWanders",
+  },
+  {
+    id: 5,
+    title: "Taskopolis",
+    description:
+      "Gamified to-do list app where every completed task helps you grow your own miniature city. Replaces traditional streaks and checkboxes with a city-building experience.",
+    image: null,
+    tags: ["TypeScript", "React", "Firebase"],
+    demoUrl: null,
+    githubUrl: "https://github.com/Prathameshworks247/Taskopolis",
+  },
+  {
+    id: 6,
+    title: "Cre8Hub",
+    description:
+      "AI platform for content creators: analyzes your style and tone, and auto-generates content tailored to give small creators the same creative advantages as top YouTubers.",
+    image: null,
+    tags: ["MERN","LangChain", "FastAPI", "MongoDB", "JWT", "RBAC"],
+    demoUrl: "https://cre8-hub.vercel.app/",
+    githubUrl: "https://github.com/Prathameshworks247/Cre8Hub",
   },
 ];
 
@@ -52,13 +83,15 @@ export const ProjectsSection = () => {
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
+              {project.image && (
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+              )}
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -80,7 +113,7 @@ export const ProjectsSection = () => {
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <ExternalLink size={20} />
+                      {project.demoUrl && <ExternalLink size={20} />}
                     </a>
                     <a
                       href={project.githubUrl}
@@ -100,7 +133,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/Prathameshworks247"
           >
             Check My Github <ArrowRight size={16} />
           </a>
