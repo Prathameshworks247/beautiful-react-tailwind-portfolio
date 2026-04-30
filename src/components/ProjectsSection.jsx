@@ -2,6 +2,16 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    id: 0,
+    title: "ChessMorph – Latent Space Chess Piece Explorer",
+    description:
+      "Interactive VAE-powered app to explore a learned latent space of chess piece shapes. Features 16 adjustable sliders, preset piece selections, and smooth morphing animations between different pieces.",
+    image: "/projects/project4.png",
+    tags: ["Python", "VAE", "PyTorch", "React", "Vercel"],
+    demoUrl: "https://chess-morph-vae.vercel.app",
+    githubUrl: "https://github.com/Prathameshworks247/ChessMorph",
+  },
+  {
     id: 1,
     title: "AGILITY – Agile Developer Productivity Platform",
     description:
